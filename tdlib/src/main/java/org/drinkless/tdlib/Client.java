@@ -6,6 +6,8 @@
 //
 package org.drinkless.tdlib;
 
+import androidx.annotation.Keep;
+
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -247,13 +249,13 @@ public final class Client {
         send(new TdApi.GetOption("version"), null, null);
     }
 
-    private static native int createNativeClient();
+        private static native int createNativeClient();
 
-    private static native void nativeClientSend(int nativeClientId, long eventId, TdApi.Function function);
+        private static native void nativeClientSend(int nativeClientId, long eventId, TdApi.Function function);
 
-    private static native int nativeClientReceive(int[] clientIds, long[] eventIds, TdApi.Object[] events, double timeout);
+        private static native int nativeClientReceive(int[] clientIds, long[] eventIds, TdApi.Object[] events, double timeout);
 
-    private static native TdApi.Object nativeClientExecute(TdApi.Function function);
+        private static native TdApi.Object nativeClientExecute(TdApi.Function function);
 
-    private static native void nativeClientSetLogMessageHandler(int maxVerbosityLevel, LogMessageHandler logMessageHandler);
+        private static native void nativeClientSetLogMessageHandler(int maxVerbosityLevel, LogMessageHandler logMessageHandler);
 }

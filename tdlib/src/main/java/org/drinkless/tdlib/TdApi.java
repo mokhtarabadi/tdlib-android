@@ -6,6 +6,8 @@ import androidx.annotation.Nullable;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
+import androidx.annotation.Keep;
+
 /**
  * This class contains as static nested classes all other TDLib interface
  * type-classes and function-classes.
@@ -39,7 +41,7 @@ public class TdApi {
          *
          * @return a string representation of the object.
          */
-        public native String toString();
+                 public native String toString();
 
         /**
          * Returns an identifier uniquely determining type of the object.
@@ -831,7 +833,7 @@ public class TdApi {
          *
          * @return a string representation of the object.
          */
-        public native String toString();
+                public native String toString();
     }
 
     /**
