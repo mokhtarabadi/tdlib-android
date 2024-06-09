@@ -6,6 +6,8 @@ android {
     namespace = "com.github.shiroedev2024.leaf.tdlib"
     compileSdk = 34
 
+    ndkVersion = "23.2.8568313"
+
     defaultConfig {
         minSdk = 21
 
