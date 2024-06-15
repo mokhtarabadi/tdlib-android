@@ -1,0 +1,1 @@
+Provided from https://github.com/tdlib/td/tree/master/example/android

@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.android.library)
+    alias(libs.plugins.spotless)
 }
 
 android {
@@ -25,6 +26,13 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
+    }
+}
+
+spotless {
+    java {
+        target("src/*/java/**/*.java")
+        eclipse()
     }
 }
 
