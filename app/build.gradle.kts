@@ -7,6 +7,8 @@ android {
     namespace = "com.github.shiroedev2024.leaf.tdlibandroid"
     compileSdk = 34
 
+    ndkVersion = "23.2.8568313"
+
     defaultConfig {
         applicationId = "com.github.shiroedev2024.leaf.tdlibandroid"
         minSdk = 21
